@@ -4,6 +4,9 @@
  */
 package org.uv.programaclase03cc;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author fermin
@@ -13,7 +16,7 @@ public class MensajeDespedida extends MensajeAbstracto{
     //polimorfismo subtipado
     @Override
     public void msg() {
-        System.out.println("Adios mundo...");
+        Logger.getLogger(MensajeDespedida.class.getName()).log(Level.INFO, "Adios mundo...");
     }
     
 }

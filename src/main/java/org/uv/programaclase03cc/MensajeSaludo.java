@@ -4,6 +4,9 @@
  */
 package org.uv.programaclase03cc;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author fermin
@@ -12,7 +15,7 @@ public class MensajeSaludo extends MensajeAbstracto{
 
     @Override
     public void msg() {
-        System.out.println("Hola mundo...");
+        Logger.getLogger(MensajeSaludo.class.getName()).log(Level.INFO, "Hola mundo...");
     }
     
 }

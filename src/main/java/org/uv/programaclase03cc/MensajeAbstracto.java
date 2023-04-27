@@ -4,6 +4,9 @@
  */
 package org.uv.programaclase03cc;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author fermin
@@ -11,7 +14,7 @@ package org.uv.programaclase03cc;
 public abstract class MensajeAbstracto {
     //metodo concreto
     public void imprimir(){
-        System.out.println("Hola mundo abstracto");
+        Logger.getLogger(MensajeAbstracto.class.getName()).log(Level.INFO, "Hola mundo abstracto");
     }
     
     //Metodo abstracto
